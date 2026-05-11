@@ -1,0 +1,27 @@
+{
+  "name": "Rip Current Information Project",
+  "shortName": "RiP",
+  "url": "https://www.ripcurrents.org",
+  "description": "A Canadian non-profit dedicated to improving public understanding of hazardous Great Lakes currents and ending preventable fatal and non-fatal drownings.",
+  "email": "RipSafety1@gmail.com",
+  "donationUrl": "https://gofund.me/82403836",
+  "nav": [
+    { "label": "Home", "url": "/" },
+    { "label": "About Us", "url": "/about/" },
+    { "label": "Rip Currents 101", "url": "/rip-currents-101/" },
+    {
+      "label": "Water Safety Education",
+      "url": "/water-safety-education/",
+      "children": [
+        { "label": "For Schools", "url": "/for-schools/" },
+        { "label": "For Families", "url": "/for-families/" }
+      ]
+    },
+    { "label": "Resources", "url": "/resources/" },
+    { "label": "News & Updates", "url": "/news/" },
+    { "label": "Contact", "url": "/contact/" }
+  ],
+  "social": [
+    { "label": "Facebook", "url": "https://www.facebook.com/" }
+  ]
+}

@@ -1,0 +1,46 @@
+---
+layout: base.njk
+title: News & Updates
+description: Updates on RiP education efforts, community partnerships, seasonal reminders, and Great Lakes water safety information.
+---
+
+<section class="hero">
+  <div class="container narrow">
+    <p class="eyebrow">News & Updates</p>
+    <h1>Community updates, education work, and seasonal safety reminders.</h1>
+    <p class="lead">RiP shares updates to keep our community informed, engaged, and prepared throughout the year.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-3">
+      {% set posts = collections.news | reverse %}
+      {% for post in posts %}
+        {% include "post-card.njk" %}
+      {% else %}
+        <article class="card">
+          <h2>No posts yet</h2>
+          <p>Check back for updates about school visits, community events, and seasonal safety reminders.</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-muted">
+  <div class="container grid grid-3">
+    <article class="card">
+      <h2>School Visits & Education Programs</h2>
+      <p>RiP regularly visits schools to deliver age-appropriate water safety education focused on rip current awareness and informed decision-making.</p>
+    </article>
+    <article class="card">
+      <h2>Community Events & Outreach</h2>
+      <p>Community events, workshops, beach safety days, and municipal partnerships strengthen shared understanding and responsibility for water safety.</p>
+    </article>
+    <article class="card">
+      <h2>Seasonal Safety Reminders</h2>
+      <p>Clear, timely information helps people make safer choices during spring hazards, summer beach use, and fall shoulder-season conditions.</p>
+    </article>
+  </div>
+</section>

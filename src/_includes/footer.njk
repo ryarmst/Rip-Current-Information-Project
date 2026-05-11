@@ -1,0 +1,22 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h2>{{ site.name }}</h2>
+      <p>Dedicated to improving public understanding of hazardous Great Lakes currents and ending preventable fatal and non-fatal drownings.</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p>Ontario-based, serving Great Lakes communities.</p>
+    </div>
+    <div>
+      <h3>Get Involved</h3>
+      <p>Help keep water safety education free and accessible.</p>
+      <a class="footer-link" href="{{ site.donationUrl }}">Donate through GoFundMe</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; {% year %} {{ site.name }}. All rights reserved.</p>
+    <p><a href="/resources/">Resources</a> <span aria-hidden="true">/</span> <a href="/contact/">Media Kit</a></p>
+  </div>
+</footer>

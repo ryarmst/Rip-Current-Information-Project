@@ -17,6 +17,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => new Date().getFullYear());
 
   return {
+    pathPrefix: "/Rip-Current-Information-Project/",
     dir: {
       input: "src",
       includes: "_includes",

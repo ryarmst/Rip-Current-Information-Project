@@ -1,9 +1,9 @@
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="/" aria-label="{{ site.name }} home">
+    <a class="brand" href="{{ '/' | url }}" aria-label="{{ site.name }} home">
       <span class="brand-logo">
         <!-- TODO: Replace logo-placeholder.png with final color-safe logo asset -->
-        <img src="/assets/images/logo-placeholder.png" alt="{{ site.name }} logo">
+        <img src="{{ '/assets/images/logo-placeholder.png' | url }}" alt="{{ site.name }} logo">
       </span>
       <span class="brand-text">
         <span class="brand-kicker">RiP</span>
@@ -22,11 +22,11 @@
       <ul>
         {% for item in site.nav %}
           <li{% if item.children %} class="has-dropdown"{% endif %}>
-            <a href="{{ item.url }}">{{ item.label }}</a>
+            <a href="{{ item.url | url }}">{{ item.label }}</a>
             {% if item.children %}
               <ul class="dropdown" aria-label="{{ item.label }} submenu">
                 {% for child in item.children %}
-                  <li><a href="{{ child.url }}">{{ child.label }}</a></li>
+                  <li><a href="{{ child.url | url }}">{{ child.label }}</a></li>
                 {% endfor %}
               </ul>
             {% endif %}

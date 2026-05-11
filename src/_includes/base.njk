@@ -8,12 +8,13 @@
     <meta property="og:title" content="{{ title }} | {{ site.name }}">
     <meta property="og:description" content="{{ description or site.description }}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ page.url | absoluteUrl(site.url) }}">
+    <meta property="og:url" content="{{ page.url | url | absoluteUrl(site.url) }}">
     <meta property="og:site_name" content="{{ site.name }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="{{ '/assets/images/logo-placeholder.png' | url }}" type="image/png">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -22,6 +23,6 @@
       {{ content | safe }}
     </main>
     {% include "footer.njk" %}
-    <script src="/assets/js/main.js" defer></script>
+    <script src="{{ '/assets/js/main.js' | url }}" defer></script>
   </body>
 </html>

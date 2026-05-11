@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.ripcurrents.org/sitemap.xml
+Sitemap: https://ryarmst.github.io/Rip-Current-Information-Project/sitemap.xml
